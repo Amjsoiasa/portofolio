@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditia Saputra - Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+    
+html { scroll-behavior: smooth; }
+
+/* Floating animations */
+.floating1 { animation: float 3s ease-in-out infinite; }
+.floating2 { animation: float 4s ease-in-out infinite; }
+.floating3 { animation: float 5s ease-in-out infinite; }
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Fade-in */
+.fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+@keyframes fadeInUp { from { opacity:0; transform: translateY(30px);} to {opacity:1; transform:translateY(0);} }
+
+/* Shadow glow for card */
+.shadow-glow { box-shadow: 0 0 25px rgba(255, 223, 71, 0.5); }
+</style>
+</head>
+<body class="bg-gradient-to-b from-[#063C3F] to-[#052F31] text-white font-sans">
+
+<!-- Navbar -->
+<header class="fixed w-full z-50 bg-[#063C3F]/80 backdrop-blur-sm shadow-md">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
+    <div class="flex justify-center items-center">
+  <img src="gambar/Adit.png" alt="Logo Aditia" class="w-20 h-20 md:w-24 md:h-24 object-contain rounded-full transition-transform duration-500 hover:scale-105">
+</div>
+    <ul id="nav-links" class="hidden md:flex space-x-8 text-lg">
+      <li><a href="#home" class="nav-link hover:text-yellow-400 transition">Home</a></li>
+      <li><a href="#about" class="nav-link hover:text-yellow-400 transition">About</a></li>
+      <li><a href="#skills" class="nav-link hover:text-yellow-400 transition">Skills</a></li>
+      <li><a href="#projects" class="nav-link hover:text-yellow-400 transition">Projects</a></li>
+      <li><a href="#contact" class="nav-link hover:text-yellow-400 transition">Contact</a></li>
+    </ul>
+    <button id="menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+  </nav>
+  <div id="mobile-menu" class="hidden fixed inset-0 bg-black/60 flex flex-col justify-center items-center space-y-6 text-2xl">
+    <a href="#home" class="hover:text-yellow-400">Home</a>
+    <a href="#about" class="hover:text-yellow-400">About</a>
+    <a href="#skills" class="hover:text-yellow-400">Skills</a>
+    <a href="#projects" class="hover:text-yellow-400">Projects</a>
+    <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    <button id="theme-toggle" class="fixed bottom-6 right-6 bg-yellow-400 text-[#063C3F] p-3 rounded-full shadow-lg hover:bg-yellow-500 transition z-50">
+  <i class="fas fa-moon"></i>
+</button>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 md:px-12 pt-32 md:pt-28 gap-12 relative">
+  <div class="md:w-1/2 space-y-8 text-center md:text-left" data-aos="fade-up">
+    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+      Hi, I'm <span class="text-yellow-400">Aditia Saputra</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+      Web Developer & UI/UX Enthusiast <br>
+      passionate about creating digital experiences that truly make an impact.
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+      <a href="#projects" class="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-yellow-500 transition transform hover:-translate-y-1 flex items-center gap-2">
+        <i class="fas fa-briefcase"></i> View My Work
+      </a>
+      <a href="#contact" class="border-2 border-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 hover:text-black transition transform hover:-translate-y-1 flex items-center gap-2">
+        <i class="fas fa-paper-plane"></i> Hire Me
+      </a>
+    </div>
+    <div class="flex space-x-6 text-2xl pt-6 justify-center md:justify-start">
+      <a href="#" class="hover:text-yellow-400 transition transform hover:scale-125"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="hover:text-yellow-400 transition transform hover:scale-125"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-yellow-400 transition transform hover:scale-125"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-yellow-400 transition transform hover:scale-125"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  <div class="md:w-1/2 flex justify-center relative" data-aos="fade-left">
+    <!-- Avatar -->
+   <img src="gambar/pps.png" alt="Avatar" class="w-64 md:w-80 drop-shadow-xl rounded-full border-4 border-yellow-400 hover:scale-105 transition-transform duration-500">
+    <!-- Floating Icons -->
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" class="w-12 absolute top-8 left-12 floating1 hover:scale-110 transition-transform duration-500">
+      <img src="gambar/vs-removebg-preview.png" alt="VSCode" class="w-12 absolute top-16 right-12 floating2 hover:rotate-12 transition-transform duration-500">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="w-12 absolute bottom-8 right-16 floating3 hover:scale-125 transition-transform duration-500">
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-10 w-full flex justify-center">
+    <div class="w-6 h-10 border-2 border-yellow-400 rounded-full flex justify-center items-start p-1">
+      <div class="w-2 h-2 bg-yellow-400 rounded-full animate-bounce"></div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<!-- About Section -->
+<section id="about" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-12 py-24 gap-12 relative overflow-hidden bg-gradient-to-r from-[#004643] to-[#004643]">
+
+  <!-- Floating shapes -->
+  <div class="absolute top-10 left-10 w-16 h-16 bg-yellow-400/30 rounded-full animate-bounce mix-blend-multiply"></div>
+  <div class="absolute bottom-20 right-20 w-20 h-20 bg-yellow-400/20 rounded-full animate-pulse mix-blend-multiply"></div>
+  <div class="absolute top-1/2 left-1/3 w-10 h-10 bg-white/20 rounded-full animate-spin-slow"></div>
+
+  <!-- Avatar -->
+  <div class="md:w-1/3 flex justify-center md:justify-end relative z-10" data-aos="fade-right">
+    <div class="relative w-80 h-80 md:w-[26rem] md:h-[26rem] rounded-full overflow-hidden shadow-[0_0_50px_rgba(250,204,21,0.3)] hover:shadow-[0_0_80px_rgba(250,204,21,0.5)] transition-shadow duration-500">
+      <img src="gambar/png.png" alt="Aditia Avatar" class="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10 rounded-full pointer-events-none"></div>
+      <div class="absolute inset-0 border-4 border-yellow-400/50 rounded-full animate-pulse pointer-events-none"></div>
+    </div>
+  </div>
+
+  <!-- About Card -->
+  <div class="md:w-2/3 bg-green/10 backdrop-blur-md border border-white/20 p-10 rounded-3xl shadow-2xl shadow-yellow-400/20 hover:shadow-yellow-400/50 text-white relative z-10" data-aos="fade-left">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-3">ABOUT <span class="text-white">ME</span></h2>
+    <div class="w-24 h-1 bg-yellow-400 mb-6 rounded-full"></div>
+    <p class="text-gray-200 leading-relaxed tracking-wide text-lg mb-6">
+      Saya adalah seorang <span class="text-yellow-400 font-semibold">Web Developer</span> yang antusias dalam membangun website modern, responsif, dan mudah digunakan. 
+      Saya juga memiliki minat besar dalam <span class="text-yellow-400 font-semibold">UI/UX Design</span> agar setiap karya saya tidak hanya berfungsi, tetapi juga menyenangkan untuk dipakai.
+    </p>
+    <div class="flex gap-4 flex-wrap">
+      <a href="cv.pdf" class="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-[#063C3F] font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-yellow-500/50 hover:scale-105 transition-all duration-300">
+        Download CV
+      </a>
+      <a href="#projects" class="inline-block border-2 border-yellow-400 text-yellow-400 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black shadow-sm transition-all duration-300">
+        My Projects
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Skills Section -->
+ <!-- Skills Section -->
+<section id="skills" class="min-h-screen bg-gradient-to-b from-[#052F31]/90 to-[#0A3B3D]/90 px-6 md:px-12 py-24">
+  <h2 class="text-3xl font-bold text-yellow-400 text-center mb-12" data-aos="fade-up">MY SKILLS</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-6 gap-8 max-w-7xl mx-auto">
+
+    <!-- Skill Card Template -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in">
+      <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
+      <p class="text-gray-200 font-semibold mb-2">HTML5</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:90%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">90%</span>
+      </div>
+    </div>
+
+    <!-- CSS3 -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in" data-aos-delay="100">
+      <i class="fab fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+      <p class="text-gray-200 font-semibold mb-2">CSS3</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:85%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">85%</span>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in" data-aos-delay="200">
+      <i class="fab fa-js-square text-4xl text-yellow-400 mb-3"></i>
+      <p class="text-gray-200 font-semibold mb-2">JavaScript</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:75%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">75%</span>
+      </div>
+    </div>
+
+    <!-- PHP -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in" data-aos-delay="300">
+      <i class="fab fa-php text-4xl text-indigo-500 mb-3"></i>
+      <p class="text-gray-200 font-semibold mb-2">PHP</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:80%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">80%</span>
+      </div>
+    </div>
+
+    <!-- Laravel -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in" data-aos-delay="400">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" class="w-10 h-10 mb-3">
+      <p class="text-gray-200 font-semibold mb-2">Laravel</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:80%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">80%</span>
+      </div>
+    </div>
+
+    <!-- Java -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in" data-aos-delay="500">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" class="w-10 h-10 mb-3">
+      <p class="text-gray-200 font-semibold mb-2">Java</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:75%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">75%</span>
+      </div>
+    </div>
+
+    <!-- Photoshop -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in" data-aos-delay="600">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" class="w-10 h-10 mb-3">
+      <p class="text-gray-200 font-semibold mb-2">Photoshop</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:85%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">85%</span>
+      </div>
+    </div>
+
+    <!-- Illustrator -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in" data-aos-delay="700">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator" class="w-10 h-10 mb-3">
+      <p class="text-gray-200 font-semibold mb-2">Illustrator</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:80%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">80%</span>
+      </div>
+    </div>
+
+    <!-- Figma -->
+    <div class="flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 p-6 rounded-2xl shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-500 transform relative" data-aos="zoom-in" data-aos-delay="800">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="w-10 h-10 mb-3">
+      <p class="text-gray-200 font-semibold mb-2">Figma</p>
+      <div class="w-full bg-gray-700 rounded-full h-3 mt-2 relative">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width:75%"></div>
+        <span class="absolute right-1 -top-6 text-sm text-gray-200 font-medium">75%</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="min-h-screen bg-gradient-to-r from-[#004643] to-[#004643] px-6 md:px-12 py-24">
+  <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 text-center mb-12" data-aos="fade-up">MY PROJECTS</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+   <!-- Project 1 -->
+<div class="bg-[#063C3F]/80 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-3xl" data-aos="flip-left">
+  <img src="gambar/poster.jpg" alt="Project 1" class="w-full h-80 md:h-96 object-cover transition-transform duration-500 hover:scale-110">
+  <div class="p-6 text-center">
+    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Project UMKM</h3>
+    <p class="text-gray-200 mb-4 text-sm md:text-base">
+      Platform ini membantu UMKM mengembangkan usaha dengan fitur katalog produk, manajemen stok, dan sistem pembayaran online.
+    </p>
+    <a href="https://example.com/project1" target="_blank" class="bg-yellow-400 text-[#063C3F] font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-yellow-500 transition-colors duration-300">
+      View Website
+    </a>
+  </div>
+</div>
+
+<!-- Project 2 -->
+<div class="bg-[#063C3F]/80 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-3xl" data-aos="flip-left" data-aos-delay="100">
+  <img src="gambar/apk.png" alt="Project 2" class="w-full h-80 md:h-96 object-cover transition-transform duration-500 hover:scale-110">
+  <div class="p-6 text-center">
+    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Game Edukasi Anak</h3>
+    <p class="text-gray-200 mb-4 text-sm md:text-base">
+      Game berhitung yang menyenangkan untuk anak-anak, dirancang untuk belajar matematika sambil bermain dan meningkatkan keterampilan berhitung.
+    </p>
+    <a href="https://septadevhub.my.id/detail_app?id=315" target="_blank" class="bg-yellow-400 text-[#063C3F] font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-yellow-500 transition-colors duration-300">
+      View Website
+    </a>
+  </div>
+</div>
+
+<!-- Project 3 -->
+<div class="bg-[#063C3F]/80 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-3xl" data-aos="flip-right" data-aos-delay="200">
+  <img src="gambar/bass.jpg" alt="Project 3" class="w-full h-80 md:h-96 object-cover transition-transform duration-500 hover:scale-110">
+  <div class="p-6 text-center">
+    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Desain 3D Kreatif</h3>
+    <p class="text-gray-200 mb-4 text-sm md:text-base">
+      Karya desain 3D yang menampilkan kreativitas dalam modeling, rendering, dan visualisasi objek. Cocok untuk kebutuhan animasi, game, maupun presentasi profesional.
+    </p>
+    <a href="https://septadevhub.my.id/detail_app?id=320" target="_blank" class="bg-yellow-400 text-[#063C3F] font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-green-500 transition-colors duration-300">
+      View Project
+    </a>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
+  <div class="relative bg-[#063C3F]/90 p-6 rounded-xl shadow-2xl max-w-3xl w-full">
+    <button onclick="closeLightbox()" class="absolute top-4 right-4 text-yellow-400 text-2xl"><i class="fas fa-times"></i></button>
+    <img id="lightbox-img" src="" alt="Project" class="w-full h-64 object-cover rounded-lg mb-4">
+    <h3 id="lightbox-title" class="text-xl font-bold text-yellow-400 mb-2"></h3>
+    <p id="lightbox-desc" class="text-gray-200"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="min-h-screen bg-[#052F31]/90 px-6 md:px-12 py-24">
+<h2 class="text-3xl font-bold text-yellow-400 text-center mb-12" data-aos="fade-up">CONTACT ME</h2>
+<div class="max-w-3xl mx-auto bg-[#063C3F]/90 p-8 rounded-xl shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+  <form class="flex flex-col gap-6">
+    <div class="relative">
+      <i class="fas fa-user absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+      <input type="text" placeholder="Your Name" class="p-3 pl-10 rounded-lg bg-gray-800 text-white focus:outline-yellow-400 w-full">
+    </div>
+    <div class="relative">
+      <i class="fas fa-envelope absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+      <input type="email" placeholder="Your Email" class="p-3 pl-10 rounded-lg bg-gray-800 text-white focus:outline-yellow-400 w-full">
+    </div>
+    <textarea placeholder="Your Message" class="p-3 rounded-lg bg-gray-800 text-white h-32 focus:outline-yellow-400 w-full"></textarea>
+    <button class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition transform hover:-translate-y-1 flex justify-center items-center gap-2">
+      <i class="fas fa-paper-plane"></i> Send Message
+    </button>
+  </form>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#063C3F]/90 py-8 mt-12 text-gray-300">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-12">
+    <p>&copy; 2025 Aditia Saputra. All rights reserved.</p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+      <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+// Lightbox functions
+function openLightbox(img, title, desc){
+  document.getElementById('lightbox-img').src = img;
+  document.getElementById('lightbox-title').innerText = title;
+  document.getElementById('lightbox-desc').innerText = desc;
+  document.getElementById('lightbox').classList.remove('hidden');
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.add('hidden');
+}
+
+// Dark/Light Mode
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  themeToggle.innerHTML = document.body.classList.contains('dark') 
+    ? '<i class="fas fa-sun"></i>' 
+    : '<i class="fas fa-moon"></i>';
+});
+
+// Projects Filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const category = btn.dataset.category;
+    projects.forEach(project => {
+      project.style.display = (category === 'all' || project.dataset.category === category) ? 'block' : 'none';
+    });
+  });
+});
+
+</script>
+
+</body>
+</html>
