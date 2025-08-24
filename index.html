@@ -47,6 +47,9 @@ html { scroll-behavior: smooth; }
       <li><a href="#about" class="nav-link hover:text-yellow-400 transition">About</a></li>
       <li><a href="#skills" class="nav-link hover:text-yellow-400 transition">Skills</a></li>
       <li><a href="#projects" class="nav-link hover:text-yellow-400 transition">Projects</a></li>
+      <li><a href="#game" class="nav-link hover:text-yellow-400 transition flex items-center gap-2">
+        <i class="fas fa-gamepad"></i> Game Skills
+      </a></li>
       <li><a href="#contact" class="nav-link hover:text-yellow-400 transition">Contact</a></li>
     </ul>
 
@@ -62,9 +65,13 @@ html { scroll-behavior: smooth; }
     <a href="#about" class="block hover:text-yellow-400 transition">About</a>
     <a href="#skills" class="block hover:text-yellow-400 transition">Skills</a>
     <a href="#projects" class="block hover:text-yellow-400 transition">Projects</a>
+    <a href="#game" class="block hover:text-yellow-400 transition flex items-center gap-2">
+      <i class="fas fa-gamepad"></i> Game Skills
+    </a>
     <a href="#contact" class="block hover:text-yellow-400 transition">Contact</a>
   </div>
 </header>
+
 
 <!-- Hero Section -->
 <section id="home" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-6 md:px-12 pt-24 md:pt-28 gap-10 relative">
@@ -165,7 +172,7 @@ html { scroll-behavior: smooth; }
   <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
 
     <!-- HTML -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 hover:rotate-1 transition-all duration-500 relative overflow-hidden" data-aos="zoom-in">
       <i class="fab fa-html5 text-5xl text-orange-500 mb-3 group-hover:drop-shadow-[0_0_20px_#f97316]"></i>
       <p class="text-gray-200 font-semibold mb-2">HTML5</p>
@@ -182,7 +189,7 @@ html { scroll-behavior: smooth; }
     </div>
 
     <!-- CSS -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 hover:-rotate-1 transition-all duration-500 relative" data-aos="zoom-in" data-aos-delay="100">
       <i class="fab fa-css3-alt text-5xl text-blue-500 mb-3 group-hover:drop-shadow-[0_0_20px_#3b82f6]"></i>
       <p class="text-gray-200 font-semibold mb-2">CSS3</p>
@@ -194,7 +201,7 @@ html { scroll-behavior: smooth; }
     </div>
 
     <!-- JavaScript -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 hover:rotate-2 transition-all duration-500 relative" data-aos="zoom-in" data-aos-delay="200">
       <i class="fab fa-js text-5xl text-yellow-400 mb-3 group-hover:drop-shadow-[0_0_20px_#facc15]"></i>
       <p class="text-gray-200 font-semibold mb-2">JavaScript</p>
@@ -211,7 +218,7 @@ html { scroll-behavior: smooth; }
   <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
 
     <!-- PHP -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 transition-all duration-500 relative" data-aos="zoom-in">
       <i class="fab fa-php text-5xl text-indigo-500 mb-3 group-hover:drop-shadow-[0_0_20px_#6366f1]"></i>
       <p class="text-gray-200 font-semibold mb-2">PHP</p>
@@ -223,7 +230,7 @@ html { scroll-behavior: smooth; }
     </div>
 
     <!-- Laravel -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 transition-all duration-500 relative" data-aos="zoom-in" data-aos-delay="100">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" class="w-12 h-12 mb-3 group-hover:drop-shadow-[0_0_20px_#f43f5e]" alt="Laravel">
       <p class="text-gray-200 font-semibold mb-2">Laravel</p>
@@ -235,7 +242,7 @@ html { scroll-behavior: smooth; }
     </div>
 
     <!-- Java -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 transition-all duration-500 relative" data-aos="zoom-in" data-aos-delay="200">
       <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" class="w-12 h-12 mb-3 group-hover:drop-shadow-[0_0_20px_#ef4444]" alt="Java">
       <p class="text-gray-200 font-semibold mb-2">Java</p>
@@ -252,7 +259,7 @@ html { scroll-behavior: smooth; }
   <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
     <!-- Photoshop -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 transition-all duration-500 relative" data-aos="zoom-in">
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="w-12 h-12 mb-3 group-hover:drop-shadow-[0_0_20px_#38bdf8]" alt="Photoshop">
       <p class="text-gray-200 font-semibold mb-2">Photoshop</p>
@@ -264,7 +271,7 @@ html { scroll-behavior: smooth; }
     </div>
 
     <!-- Illustrator -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 transition-all duration-500 relative" data-aos="zoom-in" data-aos-delay="100">
       <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" class="w-12 h-12 mb-3 group-hover:drop-shadow-[0_0_20px_#f97316]" alt="Illustrator">
       <p class="text-gray-200 font-semibold mb-2">Illustrator</p>
@@ -276,7 +283,7 @@ html { scroll-behavior: smooth; }
     </div>
 
     <!-- Figma -->
-    <div class="group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
+    <div class="skill-card group flex flex-col items-center bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 
       p-6 rounded-2xl shadow-xl hover:scale-110 transition-all duration-500 relative" data-aos="zoom-in" data-aos-delay="200">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" class="w-12 h-12 mb-3 group-hover:drop-shadow-[0_0_20px_#a855f7]" alt="Figma">
       <p class="text-gray-200 font-semibold mb-2">Figma</p>
@@ -289,6 +296,148 @@ html { scroll-behavior: smooth; }
   </div>
 </section>
 
+<section id="game" class="min-h-screen bg-gradient-to-b from-[#0A3B3D]/90 to-[#052F31]/90 px-6 md:px-12 py-24">
+  <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 text-center mb-12" data-aos="fade-up">
+    GAME PROFILE & STATS
+  </h2>
+
+  <!-- Top Profile & Stats -->
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mb-12">
+    <!-- Gamer Card -->
+    <div class="bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-6 shadow-xl relative overflow-hidden" data-aos="zoom-in">
+      <div class="flex items-center gap-4">
+        <div class="w-16 h-16 rounded-2xl bg-[#0F4C5C] grid place-items-center shadow">
+          <i class="fas fa-gamepad text-2xl text-yellow-300"></i>
+        </div>
+        <div>
+          <p class="text-white font-semibold text-lg">Gamer Tag</p>
+          <p class="text-gray-300 text-sm">@yourname</p>
+        </div>
+      </div>
+      <div class="mt-6 grid grid-cols-3 gap-3 text-center">
+        <div class="bg-[#052F31]/60 p-3 rounded-xl">
+          <p class="text-yellow-300 text-xl font-bold">1.8k</p>
+          <p class="text-gray-300 text-xs">Hours</p>
+        </div>
+        <div class="bg-[#052F31]/60 p-3 rounded-xl">
+          <p class="text-yellow-300 text-xl font-bold">58%</p>
+          <p class="text-gray-300 text-xs">Win Rate</p>
+        </div>
+        <div class="bg-[#052F31]/60 p-3 rounded-xl">
+          <p class="text-yellow-300 text-xl font-bold">2.1</p>
+          <p class="text-gray-300 text-xs">KDA</p>
+        </div>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-2">
+        <span class="px-3 py-1 text-xs rounded-full bg-yellow-400 text-[#052F31] font-bold">Mythic</span>
+        <span class="px-3 py-1 text-xs rounded-full bg-[#0F4C5C] text-yellow-300">Assaulter</span>
+        <span class="px-3 py-1 text-xs rounded-full bg-[#0F4C5C] text-yellow-300">Strategist</span>
+      </div>
+    </div>
+
+    <!-- Favorite Roles -->
+    <div class="bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-6 shadow-xl" data-aos="zoom-in" data-aos-delay="100">
+      <p class="text-white font-semibold mb-4">Favorite Roles</p>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="group flex flex-col items-center bg-[#052F31]/60 rounded-xl p-4 hover:scale-105 transition">
+          <i class="fas fa-bullseye text-2xl text-yellow-300 mb-2 group-hover:animate-bounce"></i>
+          <span class="text-gray-200 text-sm">Assasin</span>
+        </div>
+        <div class="group flex flex-col items-center bg-[#052F31]/60 rounded-xl p-4 hover:scale-105 transition">
+          <i class="fas fa-shield-alt text-2xl text-yellow-300 mb-2 group-hover:animate-bounce"></i>
+          <span class="text-gray-200 text-sm">Marksman</span>
+        </div>
+        <div class="group flex flex-col items-center bg-[#052F31]/60 rounded-xl p-4 hover:scale-105 transition">
+          <i class="fas fa-magic text-2xl text-yellow-300 mb-2 group-hover:animate-bounce"></i>
+          <span class="text-gray-200 text-sm">Mage</span>
+        </div>
+      </div>
+      <p class="text-gray-300 text-xs mt-4">Flexible role, fokus macro & objective control.</p>
+    </div>
+
+    <!-- Achievements -->
+    <div class="bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-6 shadow-xl" data-aos="zoom-in" data-aos-delay="200">
+      <p class="text-white font-semibold mb-4">Achievements</p>
+      <div class="flex flex-wrap gap-3">
+        <span class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-[#052F31]/60 text-gray-200 text-sm">
+          <i class="fas fa-trophy text-yellow-300"></i> Tournament Top 2 Lokal
+        </span>
+        <span class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-[#052F31]/60 text-gray-200 text-sm">
+          <i class="fas fa-bolt text-yellow-300"></i> 20 MVP Streak
+        </span>
+        <span class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-[#052F31]/60 text-gray-200 text-sm">
+          <i class="fas fa-users text-yellow-300"></i> Shotcaller/IGL
+        </span>
+      </div>
+      <div class="mt-6">
+        <p class="text-gray-300 text-sm mb-2">Training Consistency</p>
+        <div class="w-full h-3 bg-gray-700 rounded-full overflow-hidden">
+          <div class="game-progress h-3 bg-yellow-400 rounded-full" data-width="80%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+<div class="container mx-auto px-4 py-12">
+  <!-- Tabs -->
+  <div class="flex justify-center gap-4 mb-12" data-aos="fade-up">
+    <button class="tab-btn px-6 py-3 rounded-xl bg-yellow-400 text-[#052F31] font-bold shadow-md active hover:scale-105 transition" data-platform="Mobile">
+      Mobile
+    </button>
+    <button class="tab-btn px-6 py-3 rounded-xl bg-[#0F4C5C] text-yellow-300 hover:bg-yellow-400 hover:text-[#052F31] shadow-md hover:scale-105 transition" data-platform="PC">
+      PC
+    </button>
+    <button class="tab-btn px-6 py-3 rounded-xl bg-[#0F4C5C] text-yellow-300 hover:bg-yellow-400 hover:text-[#052F31] shadow-md hover:scale-105 transition" data-platform="Console">
+      Console
+    </button>
+  </div>
+
+  <!-- Games Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    
+    <!-- Game Card -->
+    <div class="flex justify-center game-card bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 flex flex-col" data-platform="Mobile" data-aos="fade-up">
+      <div class="flex items-center gap-3 mb-6">
+        <i class="fa-solid fa-mobile-screen text-yellow-400 text-3xl"></i>
+        <h3 class="text-2xl font-bold text-white">Mobile Games</h3>
+      </div>
+      <ul class="space-y-3 flex-1">
+        <li><a href="https://www.pubgmobile.com/id/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">PUBG Mobile</a></li>
+        <li><a href="https://ff.garena.com/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">Free Fire</a></li>
+        <li><a href="https://m.mobilelegends.com/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">Mobile Legends</a></li>
+      </ul>
+    </div>
+
+    <!-- PC Card -->
+    <div class="game-card bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 flex flex-col" data-platform="PC" data-aos="fade-up" data-aos-delay="100">
+      <div class="flex items-center gap-3 mb-6">
+        <i class="fa-solid fa-desktop text-blue-400 text-3xl"></i>
+        <h3 class="text-2xl font-bold text-white">PC Games</h3>
+      </div>
+      <ul class="space-y-3 flex-1">
+        <li><a href="https://www.playvalorant.com/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">Valorant</a></li>
+        <li><a href="https://www.dota2.com/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">Dota 2</a></li>
+        <li><a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">CS:GO</a></li>
+      </ul>
+    </div>
+
+    <!-- Console Card -->
+    <div class="game-card bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 flex flex-col" data-platform="Console" data-aos="fade-up" data-aos-delay="200">
+      <div class="flex items-center gap-3 mb-6">
+        <i class="fa-solid fa-gamepad text-green-400 text-3xl"></i>
+        <h3 class="text-2xl font-bold text-white">Console Games</h3>
+      </div>
+      <ul class="space-y-3 flex-1">
+        <li><a href="https://www.ea.com/games/fifa/fifa-24" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">FIFA 24</a></li>
+        <li><a href="https://www.playstation.com/en-us/god-of-war/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">God of War</a></li>
+        <li><a href="https://www.playstation.com/en-us/the-last-of-us/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">The Last of Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</div>
+</section>
 
 <!-- Projects Section -->
 <section id="projects" class="min-h-screen bg-gradient-to-r from-[#004643] to-[#004643] px-6 md:px-12 py-24">
@@ -410,16 +559,66 @@ html { scroll-behavior: smooth; }
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-    const bars = document.querySelectorAll(".progress-bar");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const bar = entry.target;
-          bar.style.width = bar.getAttribute("data-width");
-        }
+    const tabs = document.querySelectorAll(".tab-btn");
+    const cards = document.querySelectorAll(".game-card");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        // reset style tab
+        tabs.forEach(t => {
+          t.classList.remove("bg-yellow-400", "text-[#052F31]", "font-bold", "active");
+          t.classList.add("bg-[#0F4C5C]", "text-yellow-300");
+        });
+
+        // aktifkan tab sekarang
+        tab.classList.remove("bg-[#0F4C5C]", "text-yellow-300");
+        tab.classList.add("bg-yellow-400", "text-[#052F31]", "font-bold", "active");
+
+        const platform = tab.dataset.platform;
+
+        // tampilkan/hilangkan game-card
+        cards.forEach(card => {
+          if (card.dataset.platform === platform) {
+            card.style.display = "block"; // tampilkan
+          } else {
+            card.style.display = "none"; // sembunyikan
+          }
+        });
       });
-    }, { threshold: 0.5 });
-    bars.forEach(bar => observer.observe(bar));
+    });
+
+    // Default show "Mobile"
+    tabs[0].click();
+  });
+   // Animate progress bar
+  document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".progress-bar");
+    bars.forEach(bar => {
+      let width = bar.getAttribute("data-width");
+      bar.style.width = "0%";
+      setTimeout(() => {
+        bar.style.transition = "width 2s ease-in-out";
+        bar.style.width = width;
+      }, 300);
+    });
+  });
+
+  // Tilt effect
+  const cards = document.querySelectorAll(".skill-card");
+  cards.forEach(card => {
+    card.addEventListener("mousemove", e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / 20).toFixed(2);
+      const rotateY = ((x - centerX) / -20).toFixed(2);
+      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+    });
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "rotateX(0) rotateY(0) scale(1)";
+    });
   });
 AOS.init({ duration: 1000, once: true });
 const menuBtn = document.getElementById('menu-btn');
@@ -459,6 +658,18 @@ filterBtns.forEach(btn => {
   });
 });
 
+ document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".progress-bar");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          bar.style.width = bar.getAttribute("data-width");
+        }
+      });
+    }, { threshold: 0.5 });
+    bars.forEach(bar => observer.observe(bar));
+  });
 </script>
 
 </body>
