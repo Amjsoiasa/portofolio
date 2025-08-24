@@ -377,66 +377,72 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
   </div>
-   
-<div class="container mx-auto px-4 py-12">
+<div class="container mx-auto px-6 py-16">
   <!-- Tabs -->
-  <div class="flex justify-center gap-4 mb-12" data-aos="fade-up">
-    <button class="tab-btn px-6 py-3 rounded-xl bg-yellow-400 text-[#052F31] font-bold shadow-md active hover:scale-105 transition" data-platform="Mobile">
-      Mobile
-    </button>
-    <button class="tab-btn px-6 py-3 rounded-xl bg-[#0F4C5C] text-yellow-300 hover:bg-yellow-400 hover:text-[#052F31] shadow-md hover:scale-105 transition" data-platform="PC">
-      PC
-    </button>
-    <button class="tab-btn px-6 py-3 rounded-xl bg-[#0F4C5C] text-yellow-300 hover:bg-yellow-400 hover:text-[#052F31] shadow-md hover:scale-105 transition" data-platform="Console">
-      Console
-    </button>
-  </div>
-
   <!-- Games Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-    
-    <!-- Game Card -->
-    <div class="flex justify-center game-card bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 flex flex-col" data-platform="Mobile" data-aos="fade-up">
-      <div class="flex items-center gap-3 mb-6">
-        <i class="fa-solid fa-mobile-screen text-yellow-400 text-3xl"></i>
-        <h3 class="text-2xl font-bold text-white">Mobile Games</h3>
-      </div>
-      <ul class="space-y-3 flex-1">
-        <li><a href="https://www.pubgmobile.com/id/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">PUBG Mobile</a></li>
-        <li><a href="https://ff.garena.com/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">Free Fire</a></li>
-        <li><a href="https://m.mobilelegends.com/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">Mobile Legends</a></li>
-      </ul>
-    </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 p-4 md:p-6">
 
-    <!-- PC Card -->
-    <div class="game-card bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 flex flex-col" data-platform="PC" data-aos="fade-up" data-aos-delay="100">
-      <div class="flex items-center gap-3 mb-6">
-        <i class="fa-solid fa-desktop text-blue-400 text-3xl"></i>
-        <h3 class="text-2xl font-bold text-white">PC Games</h3>
+    <!-- Card 1: PUBG -->
+    <a href="https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/" target="_blank"
+       class="bg-gray-800 rounded-2xl shadow-xl p-8 text-center transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 block" 
+       data-aos="fade-up" data-aos-delay="100">
+      <div class="aspect-square overflow-hidden rounded-xl">
+        <img src="cod.jpeg" 
+             alt="PUBG" 
+             class="w-full h-full object-cover hover:scale-110 transition duration-300">
       </div>
-      <ul class="space-y-3 flex-1">
-        <li><a href="https://www.playvalorant.com/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">Valorant</a></li>
-        <li><a href="https://www.dota2.com/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">Dota 2</a></li>
-        <li><a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">CS:GO</a></li>
-      </ul>
-    </div>
+      <h2 class="text-white text-2xl font-bold mt-6">PUBG</h2>
+      <span class="bg-yellow-400 text-black text-sm font-semibold px-4 py-1 rounded-full shadow">Pro Player</span>
+      <p class="text-gray-300 text-sm mt-5 leading-relaxed">
+        Saya suka bermain PUBG karena menantang dan menguji strategi tim serta kemampuan bertahan hidup.
+      </p>
+      <div class="w-full bg-gray-700 h-3 rounded-full mt-6">
+        <div class="bg-yellow-400 h-3 rounded-full" style="width: 85%;"></div>
+      </div>
+    </a>
 
-    <!-- Console Card -->
-    <div class="game-card bg-gradient-to-tr from-[#063C3F]/80 to-[#075151]/80 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 flex flex-col" data-platform="Console" data-aos="fade-up" data-aos-delay="200">
-      <div class="flex items-center gap-3 mb-6">
-        <i class="fa-solid fa-gamepad text-green-400 text-3xl"></i>
-        <h3 class="text-2xl font-bold text-white">Console Games</h3>
+    <!-- Card 2: Mobile Legends -->
+    <a href="https://play.google.com/store/apps/details?id=com.mobile.legends" target="_blank"
+       class="bg-gray-800 rounded-2xl shadow-xl p-8 text-center transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 block" 
+       data-aos="fade-up" data-aos-delay="200">
+      <div class="aspect-square overflow-hidden rounded-xl">
+        <img src="ll.jpeg" 
+             alt="Mobile Legends" 
+             class="w-full h-full object-cover hover:scale-110 transition duration-300">
       </div>
-      <ul class="space-y-3 flex-1">
-        <li><a href="https://www.ea.com/games/fifa/fifa-24" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">FIFA 24</a></li>
-        <li><a href="https://www.playstation.com/en-us/god-of-war/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">God of War</a></li>
-        <li><a href="https://www.playstation.com/en-us/the-last-of-us/" target="_blank" class="block px-4 py-2 bg-[#052F31]/60 rounded-lg text-gray-300 hover:bg-yellow-400 hover:text-[#052F31] transition">The Last of Us</a></li>
-      </ul>
-    </div>
+      <h2 class="text-white text-2xl font-bold mt-6">Mobile Legends</h2>
+      <span class="bg-green-400 text-black text-sm font-semibold px-4 py-1 rounded-full shadow">Advanced</span>
+      <p class="text-gray-300 text-sm mt-5 leading-relaxed">
+        Mobile Legends menjadi favorit karena permainan cepat dan kolaborasi tim yang seru.
+      </p>
+      <div class="w-full bg-gray-700 h-3 rounded-full mt-6">
+        <div class="bg-green-400 h-3 rounded-full" style="width: 70%;"></div>
+      </div>
+    </a>
+
+    <!-- Card 3: Call of Duty -->
+    <a href="https://www.callofduty.com/mobile" target="_blank"
+       class="bg-gray-800 rounded-2xl shadow-xl p-8 text-center transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 block" 
+       data-aos="fade-up" data-aos-delay="300">
+      <div class="aspect-square overflow-hidden rounded-xl">
+        <img src="pp.jpeg" 
+             alt="Call of Duty" 
+             class="w-full h-full object-cover hover:scale-110 transition duration-300">
+      </div>
+      <h2 class="text-white text-2xl font-bold mt-6">Call of Duty</h2>
+      <span class="bg-blue-400 text-black text-sm font-semibold px-4 py-1 rounded-full shadow">Intermediate</span>
+      <p class="text-gray-300 text-sm mt-5 leading-relaxed">
+        Call of Duty memberi pengalaman realistis dengan grafik menakjubkan dan aksi cepat.
+      </p>
+      <div class="w-full bg-gray-700 h-3 rounded-full mt-6">
+        <div class="bg-blue-400 h-3 rounded-full" style="width: 50%;"></div>
+      </div>
+    </a>
 
   </div>
 </div>
 </div>
+
 </section>
 
 <!-- Projects Section -->
